@@ -1,0 +1,87 @@
+# ==============================================================================
+# BJRS Cinema Ticketing System - Unified .gitignore (Laravel 11 + React / Vite)
+# ==============================================================================
+
+# --- OS & IDE Metadata ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+
+# --- Environment & Secret Configuration ---
+.env
+.env.*
+!.env.example
+!.env.testing
+backend/.env
+backend/.env.*
+!backend/.env.example
+!backend/.env.testing
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# --- Backend (Laravel / Composer / PHP) ---
+/vendor/
+backend/vendor/
+/bootstrap/cache/
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitignore
+/storage/*.key
+backend/storage/*.key
+backend/storage/app/*
+!backend/storage/app/.gitignore
+!backend/storage/app/public/
+backend/storage/framework/cache/*
+!backend/storage/framework/cache/.gitignore
+backend/storage/framework/sessions/*
+!backend/storage/framework/sessions/.gitignore
+backend/storage/framework/testing/*
+!backend/storage/framework/testing/.gitignore
+backend/storage/framework/views/*
+!backend/storage/framework/views/.gitignore
+backend/storage/logs/*
+!backend/storage/logs/.gitignore
+!backend/storage/logs/laravel.log
+.phpunit.result.cache
+backend/.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+
+# --- Frontend (Node / React / Vite) ---
+/node_modules/
+frontend/node_modules/
+/dist/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Temporary & Scratch Files ---
+*.tmp
+*.temp
+*.log
+*.sqlite
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+scratch/
