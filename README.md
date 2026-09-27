@@ -5,7 +5,6 @@
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
 [![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -41,7 +40,7 @@ Before taking a customer's booking or scheduling a screening, an enterprise cine
 4. **Are customer confirmations instantaneous**, delivering printable digital QR codes and automated email receipts asynchronously?
 5. **Can executive leadership track real-time revenue and occupancy** across every branch nationwide in a single dashboard?
 
-**BJRS Cinema Ticketing System** unifies this entire operational and customer journey into an autonomous, institutional-grade cinema management platform. Detailed technical and design foundations can be reviewed in the [PRD](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/PRD.md), [SDD](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/SDD.md), [User Flow](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/USER_FLOW.md), [User Journey](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/USER_JOURNEY.md), and [AI Developer Guidelines](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/AGENTS.md).
+**BJRS Cinema Ticketing System** unifies this entire operational and customer journey into an autonomous, institutional-grade cinema management platform. Detailed technical and design foundations can be reviewed in the [PRD](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/PRD.md), [SDD](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/SDD.md), [User Flow](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/USER_FLOW.md), [User Journey](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/USER_JOURNEY.md), and [Engineering Guidelines](file:///c:/Users/Shelley/Desktop/projects/php/cinema-ticketing-system/docs/ENGINEERING_GUIDELINES.md).
 
 ---
 
@@ -125,7 +124,7 @@ flowchart TD
                                                          │
                                                          ▼
                                          ┌───────────────────────────────┐
-                                         │     Supabase (PostgreSQL)     │
+                                         │           Supabase            │
                                          │  Tables, Foreign Keys, Indexes│
                                          └───────────────────────────────┘
 ```
@@ -136,7 +135,7 @@ flowchart TD
 
 - **Frontend Application:** React 18+, Vite 5, React Router v6, Axios, Lucide React, TailwindCSS (Dark Cinema Theme).
 - **Backend Application:** Laravel 11.x, PHP 8.2+, Eloquent ORM, Form Requests, Sanctum Authentication, Mailables.
-- **Database & Storage:** PostgreSQL 15+ (Hosted on Supabase), Connection Pooling, Transactional Locks.
+- **Database & Storage:** Supabase (Cloud Database), Connection Pooling, Transactional Locks.
 - **Queues & Asynchronous Services:** Laravel Database / Redis Queue Worker, SMTP Mailer (Mailtrap / Production SMTP).
 - **Design & UI Tokens:** Responsive Dark Cinema Palette (`#0B0F17`, `#E50914`, `#1F2937`), Glassmorphic Modals, Custom Seat Matrix SVG.
 
@@ -170,7 +169,7 @@ Monitor live box office sales, occupancy rates per screening room, and top-perfo
 - **PHP:** 8.2 or higher
 - **Composer:** 2.x
 - **Node.js:** 18.x or 20.x LTS & **npm**
-- **Database:** PostgreSQL 15+ or a [Supabase](https://supabase.com) account
+- **Database:** [Supabase](https://supabase.com) project (or local database instance)
 
 ### Step 1: Clone Repository
 ```bash
@@ -224,4 +223,4 @@ php artisan queue:work --tries=3 --timeout=90
 
 Distributed under the **MIT License**.
 
-Built with ❤️ for modern cinema chains and moviegoers worldwide. Powered by **Laravel 11**, **React 18**, and **PostgreSQL**.
+Built with ❤️ for modern cinema chains and moviegoers worldwide. Powered by **Laravel 11**, **React 18**, and **Supabase**.

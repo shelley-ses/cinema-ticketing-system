@@ -1,10 +1,10 @@
-# AGENTS.md — AI Developer & Autonomous Agent Guidelines
+# ENGINEERING_GUIDELINES.md — Engineering Standards & Architectural Guidelines
 ## BJRS Cinema Ticketing System
 
 **Document Version:** 1.0.0  
-**Target Audience:** AI Coding Assistants, LLM Agents, and Software Engineers  
+**Target Audience:** Software Engineers and Technical Contributors  
 **Applies to:** Entire `cinema-ticketing-system` Repository  
-**Tech Stack:** **Laravel 11.x (REST API Backend)** + **React 18+ (Vite SPA Frontend)**  
+**Tech Stack:** **Laravel 11.x (REST API Backend)** + **React 18+ (Vite SPA Frontend)** + **Supabase (Database)**  
 
 ---
 
